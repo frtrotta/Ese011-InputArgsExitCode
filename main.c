@@ -19,6 +19,9 @@ int main(int argc, char* argv[]) {
     srand(time(NULL));
     int r = rand() % 255;
     printf("\nHo generato il numero casuale %d: lo utilizzo come exit code.\n", r);
+    puts("Per visualizzarlo, digita (senza virgolette)");
+    puts("- in Prompt dei Comandi: \"echo %ERRORLVEL%\"");
+    puts("- in Linux (o CygWin):   \"echo $?\"");
     
     return r;
 }
